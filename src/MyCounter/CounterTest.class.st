@@ -35,3 +35,19 @@ CounterTest >> testIncrement [
 	self assert: c count equals: 4
 	
 ]
+
+{ #category : #tests }
+CounterTest >> testInitialise [
+	|c|
+	c := Counter new.
+	self assert: c count equals: 0
+	
+]
+
+{ #category : #tests }
+CounterTest >> testStartingAt5 [
+	|c|
+	c := Counter startingAt: 5.
+	self assert: c count equals: 5
+	
+]
